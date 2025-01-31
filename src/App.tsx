@@ -79,7 +79,7 @@ function App() {
         </div>
       </nav>
 
-      <main className="max-w-3xl mx-auto px-4 py-8">
+      <main className="max-w-3xl mx-auto px-4 py-8 animate-fade-in">
         {/* Desktop Step */}
 
         {/* Mobile Step */}
@@ -95,7 +95,7 @@ function App() {
         </div>
 
         {/* Render Component */}
-        <div className="mt-8">{renderStep()}</div>
+        <div className="mt-8 animate-slide-in">{renderStep()}</div>
       </main>
     </div>
   );

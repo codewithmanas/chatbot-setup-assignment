@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'slide-in': 'slideIn 0.5s ease-out',
+        'fade-in': 'fadeIn 0.3s ease-out',
+      },
+    },
   },
   plugins: [],
 }

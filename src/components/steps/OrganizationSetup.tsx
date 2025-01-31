@@ -86,12 +86,12 @@ export const OrganizationSetup: React.FC<Props> = ({ onComplete }) => {
       </h2>
 
       <form onSubmit={handleSubmit} className="space-y-6">
-        <div className="space-y-1">
-          <label className="block text-sm font-medium text-gray-700">
+        <div className="space-y-1 group">
+          <label className="block text-sm font-medium text-gray-700 group-hover:text-blue-600 transition-colors duration-200">
             Company Name
           </label>
           <input
-            className="w-full px-3 py-2 border rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none border-gray-300"
+            className="w-full px-3 py-2 border rounded-lg shadow-sm transition-all duration-200 group-hover:border-blue-600 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none border-gray-300 hover:border-blue-400"
             type="text"
             required
             value={org.name}
@@ -100,12 +100,12 @@ export const OrganizationSetup: React.FC<Props> = ({ onComplete }) => {
           />
         </div>
 
-        <div className="space-y-1">
-          <label className="block text-sm font-medium text-gray-700">
+        <div className="space-y-1 group">
+          <label className="block text-sm font-medium text-gray-700 group-hover:text-blue-600 transition-colors duration-200">
             Website URL
           </label>
           <input
-            className="w-full px-3 py-2 border rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none border-gray-300"
+            className="w-full px-3 py-2 border rounded-lg shadow-sm transition-all duration-200 group-hover:border-blue-600 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none border-gray-300 hover:border-blue-400"
             type="url"
             required
             value={org.website}
@@ -114,12 +114,12 @@ export const OrganizationSetup: React.FC<Props> = ({ onComplete }) => {
           />
         </div>
 
-        <div className="space-y-1">
-          <label className="block text-sm font-medium text-gray-700">
+        <div className="space-y-1 group">
+          <label className="block text-sm font-medium text-gray-700 group-hover:text-blue-600 transition-colors duration-200">
             Company Description
           </label>
           <input
-            className="w-full px-3 py-2 border rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none border-gray-300"
+            className="w-full px-3 py-2 border rounded-lg shadow-sm transition-all duration-200 group-hover:border-blue-600 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none border-gray-300 hover:border-blue-400"
             type="textarea"
             required
             value={org.description}
@@ -131,7 +131,7 @@ export const OrganizationSetup: React.FC<Props> = ({ onComplete }) => {
         {!pages.length ? (
           <button
             type="submit"
-            className="px-4 py-2 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 bg-blue-600 text-white hover:bg-blue-700 disabled:bg-blue-300"
+            className="px-4 py-2 rounded-lg font-medium transition-all duration-300 flex items-center gap-2 bg-blue-600 text-white hover:bg-blue-700 disabled:bg-blue-300 hover:shadow-lg bg-gradient-to-r from-blue-500 to-blue-600  hover:from-blue-600 hover:to-blue-700 disabled:from-blue-300 disabled:to-blue-400 transform hover:scale-[1.02] active:scale-[0.98]"
           >
             {isScanning ? "Scanning website..." : "Scan Website"}
             <Globe className="w-4 h-4" />
@@ -185,7 +185,7 @@ export const OrganizationSetup: React.FC<Props> = ({ onComplete }) => {
             <button
               type="button"
               onClick={onComplete}
-              className="mt-4 px-4 py-2 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 bg-blue-600 text-white hover:bg-blue-700 disabled:bg-blue-300"
+              className="mt-4 px-4 py-2 rounded-lg font-medium transition-all duration-300 flex items-center gap-2 bg-blue-600 text-white hover:bg-blue-700 disabled:bg-blue-300 hover:shadow-lg bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 disabled:from-blue-300 disabled:to-blue-400 transform hover:scale-[1.02] active:scale-[0.98]"
             >
               Continue to Integration
               <ArrowRight className="w-4 h-4" />

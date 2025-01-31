@@ -303,7 +303,7 @@ export const ChatbotIntegration: React.FC<Props> = ({ onComplete }) => {
 
         <div className="space-y-6">
           <button
-            className="w-full justify-between px-4 py-2 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 bg-blue-600 text-white hover:bg-blue-700 disabled:bg-blue-300"
+            className="w-full justify-between px-4 py-2 rounded-lg font-medium flex items-center gap-2 bg-blue-600 text-white hover:bg-blue-700 disabled:bg-blue-300 hover:shadow-lg transition-all duration-300 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 disabled:from-blue-300 disabled:to-blue-400 transform hover:scale-[1.02] active:scale-[0.98]"
             // onClick={() => setStep("testing")}
             onClick={() => setShowPreview(true)}
           >
@@ -353,7 +353,7 @@ export const ChatbotIntegration: React.FC<Props> = ({ onComplete }) => {
             </div>
 
             <button
-              className="w-full px-4 py-2 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 border-2 border-gray-200 hover:border-gray-300 disabled:border-gray-100 bg-blue-600 text-white hover:bg-blue-700 disabled:bg-blue-300"
+              className="w-full px-4 py-2 rounded-lg font-medium transition-all duration-300 flex items-center gap-2 border-2 border-gray-200 hover:border-gray-300 disabled:border-gray-100 bg-blue-600 text-white hover:bg-blue-700 disabled:bg-blue-300 hover:shadow-lg bg-gradient-to-r from-blue-500 to-blue-600  hover:from-blue-600 hover:to-blue-700 disabled:from-blue-300 disabled:to-blue-400 transform hover:scale-[1.02] active:scale-[0.98]"
               onClick={handleTestComplete}
             >
               <Send className="w-4 h-4" />
