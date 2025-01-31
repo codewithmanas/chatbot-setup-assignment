@@ -1,12 +1,17 @@
 import React, { useState } from "react";
-import { Globe, ArrowRight } from "lucide-react";
 import { clsx } from "clsx";
 import { Organization, WebPage } from "../../types";
+
+// External libraries import
+import { Globe, ArrowRight } from "lucide-react";
+import toast from "react-hot-toast";
 
 interface Props {
   onComplete: () => void;
 }
 
+
+// Dummy data for testing
 const dummyPages: WebPage[] = [
   {
     url: "/about",
@@ -39,17 +44,30 @@ export const OrganizationSetup: React.FC<Props> = ({ onComplete }) => {
   const [pages, setPages] = useState<WebPage[]>([]);
   const [selectedPage, setSelectedPage] = useState<WebPage | null>(null);
 
+
+  // Handle form submission
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsScanning(true);
 
-    // TODO: Simulate website scanning
-    setTimeout(() => {
-      setPages(dummyPages);
+    // TODO: Implement organization setup logic
+    try {
+            // Simulate website scanning
+            setTimeout(() => {
+              setPages(dummyPages);
+              setIsScanning(false);
+            }, 3000);
+            // throw new Error("Not implemented");
+      
+    } catch (error) {
+      console.error(error);
       setIsScanning(false);
-    }, 3000);
+      toast.error("An error occurred. Please try again");
+    }
   };
 
+
+// Function to get status color
   const getStatusColor = (status: WebPage["status"]) => {
     switch (status) {
       case "scraped":
