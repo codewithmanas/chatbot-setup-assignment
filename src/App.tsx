@@ -37,6 +37,8 @@ function App() {
   const [currentStep, setCurrentStep] = useState(0);
   const [completedSteps, setCompletedSteps] = useState<number[]>([]);
 
+  console.log("completedSteps", completedSteps);
+
 
   // Handle step completion
   const handleStepComplete = (step: number) => {

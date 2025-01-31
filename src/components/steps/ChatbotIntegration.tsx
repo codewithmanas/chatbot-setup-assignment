@@ -18,7 +18,7 @@ const DUMMY_SCRIPT = `<script>
   })(window,document,'script','chatLayer','BC-XXXXX');
 </script>`;
 
-export const ChatbotIntegration: React.FC<Props> = ({ onComplete }) => {
+export const ChatbotIntegration: React.FC<Props> = () => {
   const [step, setStep] = useState<"options" | "testing" | "success">(
     "options"
   );
@@ -27,6 +27,7 @@ export const ChatbotIntegration: React.FC<Props> = ({ onComplete }) => {
   const [showPreview, setShowPreview] = useState(false);
   const [showFeedback, setShowFeedback] = useState(false);
   const [showChatWidget, setShowChatWidget] = useState(false);
+
 
 
   // Function to copy the script to clipboard
