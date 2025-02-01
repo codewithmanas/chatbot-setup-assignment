@@ -5,6 +5,7 @@ import { SetupStep } from "./types";
 import { UserRegistration } from "./components/steps/UserRegistration";
 import { OrganizationSetup } from "./components/steps/OrganizationSetup";
 import { ChatbotIntegration } from "./components/steps/ChatbotIntegration";
+import { ProgressSteps } from "./components/ProgressSteps";
 
 // External libraries import
 import { Toaster } from "react-hot-toast";
@@ -36,8 +37,6 @@ const steps: SetupStep[] = [
 function App() {
   const [currentStep, setCurrentStep] = useState(0);
   const [completedSteps, setCompletedSteps] = useState<number[]>([]);
-
-  console.log("completedSteps", completedSteps);
 
 
   // Handle step completion
@@ -83,9 +82,18 @@ function App() {
 
       <main className="max-w-3xl mx-auto px-4 py-8 animate-fade-in">
         {/* Desktop Step */}
+        <div className="md:block hidden">
+          <ProgressSteps
+            steps={steps.map((step, index) => ({
+              ...step,
+              completed: completedSteps.includes(index),
+            }))}
+            currentStep={currentStep}
+          />
+        </div>
 
         {/* Mobile Step */}
-        <div className="">
+        <div className="md:hidden">
           <div className="flex items-center justify-center mb-4">
             <span className="text-sm font-medium text-gray-500">
               Step {currentStep + 1} of {steps.length}:
