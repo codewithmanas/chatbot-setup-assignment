@@ -94,7 +94,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📞 Contact
 
-Your Name - [@codewithmanas](https://twitter.com/codewithmanas)
+My X/Twitter - [@codewithmanas](https://x.com/codewithmanas)
 
 Project Link: [https://github.com/codewithmanas/chatbot-setup-assignment](https://github.com/codewithmanas/chatbot-setup-assignment)
 
