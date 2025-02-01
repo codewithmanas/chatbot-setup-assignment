@@ -1,50 +1,110 @@
-# React + TypeScript + Vite
+# SetChatBot - A Chatbot Integration Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Visit the platform: [Click here](https://set-chat-bot.netlify.app/)
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+SetChatBot is a comprehensive chatbot integration platform that enables businesses to easily add intelligent conversational interfaces to their websites. Our solution provides a seamless, user-friendly experience for setting up, customizing, and managing chatbots.
 
-## Expanding the ESLint configuration
+<!-- ![SetChatBot Logo](path/to/logo.png) -->
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+### 1. Seamless Onboarding
+- User-friendly registration process
+- Google OAuth integration
+- Email verification
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### 2. Organization Setup
+- Auto-fetch website metadata
+- Website content scraping
+- Intelligent chatbot training
+
+### 3. Chatbot Integration
+- Easy copy-paste integration
+- One-click website testing
+- Multiple integration options
+
+<!-- ### 4. Real-Time WebSocket Communication
+- Low-latency message handling
+- Robust connection management
+- Automatic reconnection -->
+
+## 🛠 Tech Stack
+
+### Frontend
+- React.js
+- Tailwind CSS
+
+
+## 📦 Prerequisites
+
+- Node.js (v18+)
+- npm or yarn
+- Redis
+- WebSocket-compatible browser
+
+## 🔧 Installation (To run the platform in local system)
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/codewithmanas/chatbot-setup-assignment.git
+cd chatbot-setup-assignment
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### 2. Install Dependencies
+```bash
+# Install backend dependencies
+npm install
 ```
+
+### 4. Run Development Servers
+```bash
+npm run dev
+```
+
+## 🌐 Deployment
+
+### Frontend Deployment
+```bash
+# Build for production
+npm run build
+
+# Start production server
+npm start
+```
+
+## 🤝 Contributing
+
+### How to Contribute
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+### Contribution Guidelines
+- Follow existing code style
+- Write tests for new features
+- Update documentation
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## 📞 Contact
+
+Your Name - [@codewithmanas](https://twitter.com/codewithmanas)
+
+Project Link: [https://github.com/codewithmanas/chatbot-setup-assignment](https://github.com/codewithmanas/chatbot-setup-assignment)
+
+## 🙏 Acknowledgements
+- React.js
+- Node.js
+- WebSocket
+- Tailwind CSS
+- shadcn/ui
+
+---
+
+**Made with ❤️ by Manas Ranjan Adha**
